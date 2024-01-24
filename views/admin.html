@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- Bootstrap CSS (You can include it from a CDN or download and host it locally) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #wrapper {
+            display: flex;
+        }
+
+        #sidebar {
+            width: 250px;
+            background-color: #343a40; /* Bootstrap dark background color */
+            color: #fff;
+            padding-top: 20px;
+            min-height: 100vh;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        #footer {
+            background-color: #343a40; /* Bootstrap dark background color */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Admin Panel</h3>
+        </div>
+        <ul class="list-unstyled components">
+            <p>Main Menu</p>
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Orders</a>
+            </li>
+            <li>
+                <a href="#">Users</a>
+            </li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+        <h2>Main Content Area</h2>
+        <!-- Your main content goes here -->
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <p>&copy; 2024 Your Company</p>
+</footer>
+
+<!-- Bootstrap JS (You can include it from a CDN or download and host it locally) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
