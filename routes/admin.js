@@ -4,6 +4,8 @@ const router = express.Router();
 // GET route for admin dashboard
 router.get('/dashboard', (req, res) => {
                     res.send('Welcome to the admin dashboard!');
+});router.get('/', (req, res) => {
+                    res.send('Welcome to the admin dashboard!');
 });
 
 // POST route for adding a new book
@@ -25,5 +27,7 @@ router.delete('/books/:id', (req, res) => {
                     // Logic for removing a book
                     res.send(`Book with ID ${bookId} removed successfully!`);
 });
+
+
 
 module.exports = router;
